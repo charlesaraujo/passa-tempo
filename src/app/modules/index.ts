@@ -1,3 +1,3 @@
 export * from './jokenpo';
 export * from './tabs';
-export * from './tab1'
+export * from './tab1';

@@ -4,8 +4,18 @@ import { Component } from '@angular/core';
   templateUrl: 'jokenpo.container.html',
   styleUrls: ['jokenpo.container.scss']
 })
+// tslint:disable-next-line: component-class-suffix
 export class JokenpoContainer {
 
-  constructor() {}
+  mock = {
+    player: {
+      label: 'Charles',
+      value: 4
+    },
+    enemy: {
+      label: 'Jovinaldo',
+      value: 2
+    }
+  };
 
 }

@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PlacarComponent } from './placar.component';
+import { PontuacaoModule } from './pontuacao';
 
 @NgModule({
   declarations: [PlacarComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    PontuacaoModule
   ],
   exports: [
     PlacarComponent

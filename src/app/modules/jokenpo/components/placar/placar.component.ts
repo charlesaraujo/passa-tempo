@@ -1,36 +1,25 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+export interface PlayerJokenpo {
+  label: string;
+  value: number;
+}
 
 @Component({
   selector: 'app-placar',
   templateUrl: './placar.component.html',
   styleUrls: ['./placar.component.scss'],
 })
-export class PlacarComponent implements OnInit {
+export class PlacarComponent{
 
-  
-  player: number = 0;
-  enemy: number = 0;
-
-  @Input()
-  set playerScore(value: number) {
-    this.player = value;
-  }
-  get playerScore() {
-    return this.player
-  }
+  defaultPlayer: PlayerJokenpo = {
+    label: 'Aguardando',
+    value: 0
+  };
 
   @Input()
-  set enemyScore(value: number) {
-    if(value)
-      this.enemy = value;
-  }
-  get enemyScore() {
-    return this.enemy;
-  }
+  player: PlayerJokenpo = this.defaultPlayer;
 
-
-  constructor() { }
-
-  ngOnInit() {}
-
+  @Input()
+  enemy: PlayerJokenpo = this.defaultPlayer;
 }

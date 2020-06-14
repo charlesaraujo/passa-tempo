@@ -1,36 +1,16 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-placar-pontuacao',
   templateUrl: './pontuacao.component.html',
   styleUrls: ['./pontuacao.component.scss'],
 })
-export class PontuacaoComponent implements OnInit {
-
-  
-  player: number = 0;
-  enemy: number = 0;
+export class PontuacaoComponent {
 
   @Input()
-  set playerScore(value: number) {
-    this.player = value;
-  }
-  get playerScore() {
-    return this.player
-  }
+  label: string;
 
   @Input()
-  set enemyScore(value: number) {
-    if(value)
-      this.enemy = value;
-  }
-  get enemyScore() {
-    return this.enemy;
-  }
-
-
-  constructor() { }
-
-  ngOnInit() {}
+  value: number;
 
 }

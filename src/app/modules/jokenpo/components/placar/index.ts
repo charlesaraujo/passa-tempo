@@ -1,3 +1,3 @@
 export * from './placar.module';
 export * from './placar.component';
-// export * from './pontuacao';
+export * from './pontuacao';
