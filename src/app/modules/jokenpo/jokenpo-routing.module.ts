@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { JokenpoContainer } from './container/jokenpo.container';
+import { JokenpoContainer } from './container';
 
 const routes: Routes = [
   {

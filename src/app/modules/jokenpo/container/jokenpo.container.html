@@ -1,16 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-     Jokenpo
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">jokenpo</ion-title>
+      <ion-title size="large">Jokenpô</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
+
+  <app-placar
+    [playerScore]=11
+    [enemyScore]=10  
+    >
+  </app-placar>
+
+  <app-game
+  
+    >
+  </app-game>
 
 </ion-content>
