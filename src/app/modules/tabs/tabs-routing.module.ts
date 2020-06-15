@@ -12,12 +12,17 @@ const routes: Routes = [
         loadChildren: () => import('../tab1/tab1.module').then(m => m.Tab1PageModule)
       },
       {
-        path: 'jokenpo',
-        loadChildren: () => import('../jokenpo/jokenpo.module').then(m => m.JokenpoModule)
+        path: 'games',
+        loadChildren: () => import('../games/games.module').then(m => m.GamesModule)
       },
       {
         path: '',
-        redirectTo: 'jokenpo',
+        redirectTo: 'games',
+        pathMatch: 'full'
+      },
+      {
+        path: 'game',
+        redirectTo: 'games',
         pathMatch: 'full'
       }
     ]

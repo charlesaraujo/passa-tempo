@@ -6,7 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
   selector: 'app-core',
-  templateUrl: 'core.component.html'
+  templateUrl: 'core.component.html',
+  styleUrls: ['core.component.scss']
 })
 export class CoreComponent {
   constructor(

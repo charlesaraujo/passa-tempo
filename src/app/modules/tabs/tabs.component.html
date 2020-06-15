@@ -1,12 +1,17 @@
-<ion-tabs>
+<ion-tabs class="tabs">
 
-  <ion-tab-bar slot="top">
+  <ion-tab-bar slot="top" class="tabs-itens">
     <ion-tab-button routerLink="/tab1">
       <ion-icon name="triangle"></ion-icon>
       <ion-label>Home</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button routerLink="/jokenpo">
+    <ion-tab-button routerLink="/games">
+      <ion-icon name="ellipse"></ion-icon>
+      <ion-label>Games</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button routerLink="/game/jokenpo">
       <ion-icon name="ellipse"></ion-icon>
       <ion-label>jokenpo</ion-label>
     </ion-tab-button>

@@ -1,0 +1,23 @@
+<div class="score">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>JOKENPÔ</ion-card-subtitle>
+      <ion-card-title>Placar</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content >
+      <div class="score-board">
+        <app-pontuacao-jokenpo
+          [label]=player.label
+          [value]=player.value
+          >
+        </app-pontuacao-jokenpo>
+        <app-pontuacao-jokenpo
+          [label]=enemy.label
+          [value]=enemy.value
+          >
+        </app-pontuacao-jokenpo>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</div>

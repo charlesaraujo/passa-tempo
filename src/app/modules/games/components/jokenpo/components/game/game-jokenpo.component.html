@@ -1,0 +1,10 @@
+
+<div class="game">
+  <app-game-jokenpo-option *ngFor="let option of options"
+    [img]="option.img"
+    [label]="option.label"
+    [value]="option.value"
+    [selected]="option.choice"
+    >
+  </app-game-jokenpo-option>
+</div>

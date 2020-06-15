@@ -1,1 +1,10 @@
-
+.tabs{
+    &-itens{
+        padding-top: 20px;
+    }
+    @media only screen and (min-width: 768px) {
+        &-itens{
+            padding-top: unset;
+        }
+    }
+}

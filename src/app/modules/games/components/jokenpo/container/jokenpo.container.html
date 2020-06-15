@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+  <div class="jokenpo">
+
+    <ion-button 
+      color="danger" 
+      size="small"
+      class="jokenpo-center"
+      [routerLink]="['/games']" routerLinkActive="router-link-active" 
+      >
+      Sair
+    </ion-button>
+    <app-placar-jokenpo
+      class="ion-text-center"
+      [player]=mock.players.player
+      [enemy]=mock.players.enemy 
+      >
+    </app-placar-jokenpo>
+
+    <app-game-jokenpo
+      class="ion-text-center"
+      [options]="mock.options"
+      >
+    </app-game-jokenpo>
+
+    <div class="ion-text-center">
+      <ion-button 
+        color="danger" 
+        size="large"
+        class="jokenpo-center"
+        >
+        Confirmar
+      </ion-button>
+    </div>
+    
+  </div>
+</ion-content>

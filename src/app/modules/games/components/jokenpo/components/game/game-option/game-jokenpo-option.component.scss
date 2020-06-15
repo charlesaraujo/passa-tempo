@@ -1,0 +1,39 @@
+.game-option{
+ 
+    &-img{
+        transition: all ease-in-out .3s;
+        background-color: var(--ion-color-dark);
+        width: 90px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        padding: 10px;
+        margin:5px;
+
+        &.player{
+            background-color: var(--ion-color-success);
+        }
+        
+        &.enemy{
+            background-color: var(--ion-color-danger);
+        }
+
+        *{
+            display: block;
+            margin: 0 auto;
+        }
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    &-label{
+        font-size: .9rem;
+        padding: .1rem .6rem;
+        color: var(--ion-color-dark);
+        background-color: var(--ion-color-light);
+    }
+
+}
