@@ -108,7 +108,6 @@ export class JokenpoContainer {
    * @param index indice do array
    */
   async playerChoice(index: number){
-    this.reset();
     this.pChoice = null;
     this.enableConfirm = true;
     for (let i = 0; i < this.optionsLength; i++) {

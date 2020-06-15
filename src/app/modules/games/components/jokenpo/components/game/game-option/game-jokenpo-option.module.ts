@@ -1,3 +1,4 @@
+import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GameJokenpoOptionComponent } from './game-jokenpo-option.component';
@@ -7,6 +8,7 @@ import { GameJokenpoOptionComponent } from './game-jokenpo-option.component';
     GameJokenpoOptionComponent
   ],
   imports: [
+    IonicModule,
     CommonModule
   ],
   exports: [
