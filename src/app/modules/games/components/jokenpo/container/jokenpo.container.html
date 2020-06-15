@@ -11,14 +11,17 @@
     </ion-button>
     <app-placar-jokenpo
       class="ion-text-center"
-      [player]=mock.players.player
-      [enemy]=mock.players.enemy 
+      [player]="config.players.player"
+      [enemy]="config.players.enemy"
+      [whoWin]="config.result.whoWin"
       >
     </app-placar-jokenpo>
 
     <app-game-jokenpo
       class="ion-text-center"
-      [options]="mock.options"
+      [result]="config.result"
+      [options]="config.options"
+      (choice)="playerChoice($event)"
       >
     </app-game-jokenpo>
 
@@ -27,8 +30,14 @@
         color="danger" 
         size="large"
         class="jokenpo-center"
+        [attr.disabled]="!enableConfirm"
+        (click)="confirm()"
         >
-        Confirmar
+        {{ enableConfirm 
+           ? 'Confirmar'
+           : ' Faça sua escolha'
+             
+        }}
       </ion-button>
     </div>
     

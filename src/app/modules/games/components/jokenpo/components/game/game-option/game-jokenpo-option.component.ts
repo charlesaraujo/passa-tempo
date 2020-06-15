@@ -22,9 +22,6 @@ export class GameJokenpoOptionComponent {
   @Input()
   selected: number;
 
-  choice(){
-
-  }
   constructor() { }
 
 }

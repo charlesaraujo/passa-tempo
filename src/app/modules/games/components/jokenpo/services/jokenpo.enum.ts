@@ -6,6 +6,7 @@ export enum JokenpoEnum {
 
 export enum JokenpoPlayerEnum {
     NONE,
+    DRAW,
     PLAYER,
     ENEMY
 }

@@ -6,6 +6,7 @@ export interface JokenpoOptionType {
 }
 
 export interface JokenpoPlayerType {
+    player: number;
     label: string;
     value: number;
 }

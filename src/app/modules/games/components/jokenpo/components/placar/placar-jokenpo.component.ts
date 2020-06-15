@@ -9,6 +9,7 @@ import { JokenpoPlayerType } from '../../services';
 export class PlacarJokenpoComponent{
 
   defaultPlayer: JokenpoPlayerType = {
+    player: null,
     label: null,
     value: null
   };
@@ -18,4 +19,8 @@ export class PlacarJokenpoComponent{
 
   @Input()
   enemy: JokenpoPlayerType = this.defaultPlayer;
+
+  @Input()
+  whoWin: number;
+
 }

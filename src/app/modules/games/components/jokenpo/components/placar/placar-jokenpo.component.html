@@ -8,13 +8,17 @@
     <ion-card-content >
       <div class="score-board">
         <app-pontuacao-jokenpo
-          [label]=player.label
-          [value]=player.value
+          [label]="player.label"
+          [value]="player.value"
+          [player]="player.player"
+          [winner]="whoWin"
           >
         </app-pontuacao-jokenpo>
         <app-pontuacao-jokenpo
-          [label]=enemy.label
-          [value]=enemy.value
+          [label]="enemy.label"
+          [value]="enemy.value"
+          [player]="enemy.player"
+          [winner]="whoWin"
           >
         </app-pontuacao-jokenpo>
       </div>

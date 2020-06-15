@@ -1,14 +1,14 @@
 
 
 <div class="game-option">
-  <div class="game-option-img" (click)="choice()" [ngClass]="{player: selected === playerEnum.PLAYER, enemy: selected === playerEnum.ENEMY}">
+  <div class="game-option-img" [ngClass]="{player: selected === playerEnum.PLAYER, enemy: selected === playerEnum.ENEMY, draw: selected === playerEnum.DRAW}">
     <img [src]="img" class="game-option-center" alt="" *ngIf="img; else elseImg">
     <ng-template #elseImg>
       <ion-spinner color="light" name="dots"></ion-spinner>
     </ng-template>
   </div>
   <span class="game-option-label" *ngIf="label">
-    {{ label }} {{selected}}
+    {{ label }}
   </span>  
 </div>
 

@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { JokenpoPlayerEnum } from '../../../services';
 
 @Component({
   selector: 'app-pontuacao-jokenpo',
@@ -7,10 +8,19 @@ import { Component, Input } from '@angular/core';
 })
 export class PontuacaoJokenpoComponent {
 
+
+  public playerEnum = JokenpoPlayerEnum;
+
   @Input()
   label: string;
 
   @Input()
   value: number;
+
+  @Input()
+  winner: number;
+
+  @Input()
+  player: number;
 
 }
