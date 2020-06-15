@@ -1,12 +1,12 @@
 {
   "name": "passa-tempo",
-  "version": "0.0.1",
+  "version": "0.9.0",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

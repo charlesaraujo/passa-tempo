@@ -1,0 +1,45 @@
+<ion-content [fullscreen]="true">
+  <div class="jokenpo">
+
+    <!-- <ion-button 
+      color="danger" 
+      size="small"
+      class="jokenpo-center"
+      [routerLink]="['/games']" routerLinkActive="router-link-active" 
+      >
+      Sair
+    </ion-button> -->
+    <app-placar-jokenpo
+      class="ion-text-center"
+      [player]="config.players.player"
+      [enemy]="config.players.enemy"
+      [whoWin]="config.result.whoWin"
+      >
+    </app-placar-jokenpo>
+
+    <app-game-jokenpo
+      class="ion-text-center"
+      [result]="config.result"
+      [options]="config.options"
+      (choice)="playerChoice($event)"
+      >
+    </app-game-jokenpo>
+
+    <div class="ion-text-center">
+      <ion-button 
+        color="danger" 
+        size="large"
+        class="jokenpo-center"
+        [attr.disabled]="!enableConfirm"
+        (click)="confirm()"
+        >
+        {{ enableConfirm 
+           ? 'Confirmar'
+           : ' Faça sua escolha'
+             
+        }}
+      </ion-button>
+    </div>
+    
+  </div>
+</ion-content>

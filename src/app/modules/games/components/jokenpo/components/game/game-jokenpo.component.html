@@ -1,0 +1,17 @@
+
+<div class="game">
+  <div class="game-result" [ngClass]="{player: result.whoWin === playerEnum.PLAYER, enemy: result.whoWin === playerEnum.ENEMY, draw: result.whoWin === playerEnum.DRAW}">
+    {{ result.label }}
+  </div>
+  <div class="game-options">
+    <app-game-jokenpo-option 
+      *ngFor="let option of options; let i = index"
+      [img]="option.img"
+      [label]="option.label"
+      [value]="option.value"
+      [selected]="option.choice"
+      (click)="choiceSelected(i)"
+      >
+    </app-game-jokenpo-option>
+  </div>
+</div>
