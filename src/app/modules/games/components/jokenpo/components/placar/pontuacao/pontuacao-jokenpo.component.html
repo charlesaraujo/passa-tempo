@@ -1,0 +1,4 @@
+<div class="pontuacao-box" [ngClass]="{win: (winner === player && winner === playerEnum.PLAYER ), lose: (winner === player && winner === playerEnum.ENEMY )}">
+  <div class="pontuacao-player" [ngClass]="{player: (player === playerEnum.PLAYER ), enemy: (player === playerEnum.ENEMY )}">{{ label }}</div>
+  <div class="pontuacao-score">{{ value }}</div>
+</div>
