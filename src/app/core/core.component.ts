@@ -5,10 +5,10 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: 'app.component.html'
+  selector: 'app-core',
+  templateUrl: 'core.component.html'
 })
-export class AppComponent {
+export class CoreComponent {
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
