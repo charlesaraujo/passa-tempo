@@ -5,10 +5,10 @@ import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { CoreRoutingModule } from './core-routing.module';
 import { CoreComponent } from './core.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../../environments/environment';
 
 @NgModule({
